@@ -2,10 +2,10 @@ import "./resume.css";
 
 function Resume() {
   return (
-    <section className="resume-container">
-      <h2 className="resume-title">Resume</h2>
+    <section className="resume">
+      <h2 className="resume__title">Resume</h2>
 
-      <iframe src="/assets/resume.pdf" className="resume">
+      <iframe src="/assets/resume.pdf" className="resume__container" allowFullScreen="true">
         <p>
           Your browser does not support PDFs.
           <a href="/assets/resume.pdf" target="_blank">Download the PDF</a> instead.

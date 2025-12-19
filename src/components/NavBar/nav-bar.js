@@ -1,14 +1,17 @@
 import "./nav-bar.css";
 
-<FontAwesomeIcon icon={byPrefixAndName.fans['sun']} size="xl" style={{color: "#ababab",}} />
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+// import { byPrefixAndName } from '@awesome.me/free-brands-svg/icons'
 
 function NavBar() {
 
   return (
     <div className="nav-wrapper">
-      <i class="fa-solid fa-moon fa-xl"></i>
-      <i class="fa-solid fa-sun fa-xl" style="color: #ffffff;"></i>
-      <i class="fa-notdog fa-solid fa-sun fa-xl" style="color: #ababab;"></i>
+      <div className="color-mode-icons">
+        <FontAwesomeIcon icon={faMoon} className="moon-icon" size="xl" style={{ color: "#ffffff" }} />
+        <FontAwesomeIcon icon={faSun} className="sun-icon" size="xl" style={{ color: "#000000" }} />
+      </div>
       <nav className="nav-bar">
         <div className="nav-buttons">
           <a href="/">About</a>

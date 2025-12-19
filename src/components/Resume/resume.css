@@ -1,11 +1,15 @@
-.resume-container {
+.resume {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 90vh;
 }
 
-.resume {
+.resume__title {
+  font-size: 2.5rem;
+}
+
+.resume__container {
   width: 80%;
   height: 80%;
   margin: 0 auto;
