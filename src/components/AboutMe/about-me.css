@@ -13,7 +13,7 @@
 
 .about-me {
   min-height: 83vh;
-  background-color: #EDF9FE;
+  background-color: var(--primary-color);
   /* display: flex;
   flex-direction: column;
   align-items: center; */
@@ -92,7 +92,7 @@
 }
 
 .about-me-sec {
-  background-color: #E3C7AF;
+  background-color: var(--secondary-color);
   /* height: 50vh; */
   height: 90vh;
 }
