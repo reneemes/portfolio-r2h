@@ -9,13 +9,13 @@ function AboutMe() {
       <div className="typing-sec">
         <TypingIntro/>
       </div>
-      {/* <figure className="about-me__slideshow-container slideshow-container">
+      <figure className="about-me__slideshow-container slideshow-container">
         <div className="slideshow">
-        <img src="assets/headshot.jpg" alt="Photo of Renee" className="renee-photo slideshow-photo"/>
-        <img src="assets/travel.jpg" alt="Travel photo" className="travel-photo slideshow-photo"/>
-        <img src="assets/scout.jpg" alt="Renee's dog Scout" className="scout-photo slideshow-photo"/>
+        <img src="/assets/headshot.jpg" alt="Photo of Renee" className="renee-photo slideshow-photo"/>
+        <img src="/assets/photo2.jpg" alt="Travel photo" className="travel-photo slideshow-photo"/>
+        <img src="/assets/photo1.jpg" alt="Renee's dog Scout" className="scout-photo slideshow-photo"/>
         </div>
-        </figure> */}
+        </figure>
       <section className="about-me-sec">
         <h2 className="about-me-sec__title">ABOUT ME</h2>
         <p className="about-me-sec__bio">My career journey began with a passion for problem-solving, 
