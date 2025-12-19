@@ -4,9 +4,13 @@
 	justify-content: space-between;
 	align-items: center;
   flex-wrap: wrap;
-	box-shadow: gray 0 2px 8px;
-  background-color: powderblue;
+	/* box-shadow: gray 0 2px 8px; */
+  background-color: #EDF9FE;
 	min-height: 64px;
+}
+
+.color-mode-icons {
+  cursor: pointer;
 }
 
 i {

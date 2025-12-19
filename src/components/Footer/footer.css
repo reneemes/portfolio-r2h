@@ -1,18 +1,23 @@
-footer {
+.footer {
 	display: flex;
 	justify-content: center;
   padding-top: 30px;
+  background-color: aliceblue;
+
+  /* position: ;
+  bottom: 0;
+  width: 100%; */
 }
 
-footer a {
+.footer__icon {
 	margin: 0 1rem;
 }
 
-footer img {
+.footer__icon--img {
   height: 50px;
   transition: transform .5s;
 }
 
-footer img:hover {
+.footer__icon--img:hover {
   transform: scale(1.5);
 }
