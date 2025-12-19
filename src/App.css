@@ -1,0 +1,12 @@
+body {
+  font-family: Lato;
+	margin: 0;
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* .hidden {
+  display: none!important;
+} */

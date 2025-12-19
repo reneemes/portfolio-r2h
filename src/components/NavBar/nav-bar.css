@@ -1,0 +1,49 @@
+.nav-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+  flex-wrap: wrap;
+	box-shadow: gray 0 2px 8px;
+  background-color: powderblue;
+	min-height: 64px;
+}
+
+i {
+  /* font-weight: 600;
+  font-size: 1.75rem; */
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.nav-buttons {
+	display: flex;
+	justify-content: space-around;
+	width: 30rem;
+  text-align: center;
+  margin-right: 5px;
+}
+
+.nav-buttons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 9.3rem;
+  text-align: center;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+
+  text-decoration: none;
+  color: black;
+}
+
+.nav-buttons a:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+/* .resume {
+  text-decoration: none;
+  color: black;
+} */
