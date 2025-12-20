@@ -3,68 +3,92 @@ import "./contact.css";
 function Contact() {
 
   return (
-      <section className="contact">
-      <div className="contact__container">
-        <h1 className="contact__title">Contact Me</h1>
+    <section className="contact">
+      <div className="contact__greeting">
 
-        <form className="contact__form">
+        <div className="contact-top">
+          <h1 className="contact__title">Get in Touch</h1>
+        </div>
 
-          <div className="contact__field">
-            <label for="name">Name</label>
-            <input
-              className="contact__input"
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name (required)"
-              required
-            />
-          </div>
+        <div className="contact-btm-lft">
+          <p className="contact__message">
+            If you would like to see more of my work, collaborate, or connect, leave me a note!
+            I'd love to hear from you.
+          </p>
+        </div>
 
-          <div className="contact__field">
-            <input
-              className="contact__input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email (required)"
-              required
-            />
-          </div>
+        <div className="middle-line"></div>
 
-          <div className="contact__field">
-            <input
-              className="contact__input"
-              type="tel"
-              name="phone"
-              id="phone"
-              placeholder="Phone Number"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-            />
-          </div>
+        <div className="contact-btm-rt">
+          <p>
+            ~~~~~
+            ~~~~~
+            ~~~~~
+          </p>
+        </div>
 
-          <div className="contact__field">
-            <textarea
-              className="contact__textarea"
-              name="comments"
-              id="comments"
-              placeholder="Please type here... (required)"
-              maxLength="500"
-              required
-            />
-          </div>
-
-          <div className="contact__actions">
-            <input
-              className="contact__submit"
-              type="submit"
-              value="Submit"
-            />
-          </div>
-
-        </form>
       </div>
+      <form className="contact__form">
+
+        <div className="contact__field">
+          <label for="name">Enter Your Name <span className="required-id">*</span></label>
+          <input
+            className="contact__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+        </div>
+
+        <div className="contact__field">
+          <label for="email">Enter Your Email <span className="required-id">*</span></label>
+          <input
+            className="contact__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+
+        <div className="contact__field">
+          <label for="phone">Enter Your Phone Number</label>
+          <input
+            className="contact__input"
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="(555)123-456"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            required
+          />
+        </div>
+
+        <div className="contact__field">
+          <label for="comments">Enter Your Message <span className="required-id">*</span></label>
+          <textarea
+            className="contact__textarea"
+            name="comments"
+            id="comments"
+            placeholder="Enter message here..."
+            maxLength="500"
+            required
+          />
+        </div>
+
+        <div className="contact__actions">
+          <input
+            className="contact__submit"
+            type="submit"
+            value="Submit"
+          />
+        </div>
+
+      </form>
+      {/* </div> */}
     </section>
   )
 }

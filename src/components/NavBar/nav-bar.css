@@ -10,6 +10,10 @@
 	min-height: 100px;
 }
 
+.contact-header {
+  background-color: var(--contact-color);
+}
+
 .header__initial--char {
   font-size: 4rem;
   font-family: "Xanh Mono", monospace;
@@ -17,6 +21,13 @@
 
 .header__nav-bar--desktop {
   display: none;
+}
+
+.nav-overlay.open {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 .header__nav-bar--mobile {

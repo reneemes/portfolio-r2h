@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,4 +21,5 @@ code {
   --primary-color: #EDF9FE;
   --secondary-color: #E3C7AF;
   --contrast-color: #033D5E;
+  --contact-color: #8EA9AA;
 }
