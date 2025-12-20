@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  color: var(--header-initial-color);
 }
 
 body {
@@ -22,4 +23,5 @@ code {
   --secondary-color: #E3C7AF;
   --contrast-color: #033D5E;
   --contact-color: #8EA9AA;
+  --header-initial-color: #031B2B;
 }

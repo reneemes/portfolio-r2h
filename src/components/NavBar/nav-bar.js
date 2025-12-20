@@ -13,7 +13,7 @@ function NavBar() {
   return (
     <div className={`header ${isContactPage ? "contact-header" : ""}`}>
       <div className="header__initial">
-        <a className="header__initial--char">R</a>
+        <a className="header__initial--char" href="/">R</a>
       </div>
       <nav className="header__nav-bar">
         {/* Desktop Nav */}
@@ -25,7 +25,7 @@ function NavBar() {
         </div>
 
         {/* Hamburger Icon */}
-        <FontAwesomeIcon icon={faBars} size="2xl" id="hamburger-icon" onClick={() => setIsOpen(true)}/>
+        <FontAwesomeIcon icon={faBars} size="2xl" style={{color: "var(--header-initial-color)",}} id="hamburger-icon" onClick={() => setIsOpen(true)}/>
         {/* Mobile Nav with Overlay*/}
         <div className={`nav-overlay ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}>
           <div className={`header__nav-bar--mobile ${isOpen ? "open" : ""}`}>
