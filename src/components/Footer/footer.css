@@ -1,23 +1,21 @@
 .footer {
+  font-family: "Xanh Mono", monospace;
 	display: flex;
-	justify-content: center;
-  padding-top: 30px;
-  background-color: aliceblue;
-
-  /* position: ;
-  bottom: 0;
-  width: 100%; */
+  flex-direction: column;
+	align-items: center;
+  padding: 30px;
+  background-color: var(--secondary-color);
 }
 
-.footer__icon {
-	margin: 0 1rem;
+.footer__links-icon {
+  margin: 10px;
 }
 
-.footer__icon--img {
+.footer__links-icon--img {
   height: 30px;
   transition: transform .5s;
 }
 
-.footer__icon--img:hover {
+.footer__links-icon--img:hover {
   transform: scale(1.5);
 }
