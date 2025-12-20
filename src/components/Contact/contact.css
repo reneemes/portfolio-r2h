@@ -2,8 +2,6 @@
 	display: flex;
   flex-direction: column;
 	justify-content: center;
-  /* background-color: var(--primary-color); */
-  /* background-color: var(--contrast-color); */
   background-color: var(--contact-color);
 }
 
@@ -11,9 +9,8 @@
   display: grid;
   grid-template-columns: 1fr 0.2fr 1fr;
   grid-template-rows: .25fr 1fr;
+	background-color: var(--postcard-color);
   height: 300px;
-	background-color: #E3C7AF;
-	/* background-color: #fff; */
   margin: 20px 20px 0;
 }
 
@@ -29,9 +26,10 @@
 }
 
 .contact__message {
-  padding: 10px;
   font-size: .75rem;
   line-height: 1.5rem;
+  padding: 10px;
+  margin-left: 10px;
 }
 
 .middle-line {
@@ -42,14 +40,55 @@
   background-color: black;
 }
 
+.contact-btm-rt {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: flex-end;
+  /* width: 100%; */
+}
+
+.stamp {
+  /* HTML: <div class="stamp"></div> */
+  --r: 5px; /* control the radius */
+
+  /* height: 60px; */
+  height: 70px;
+  aspect-ratio: 1;
+  padding: var(--r);
+  background: #b3b39c;
+  mask: 
+    radial-gradient(50% 50%,#0000 66%,#000 67%) round 
+     var(--r) var(--r)/calc(2*var(--r)) calc(2*var(--r)), 
+    conic-gradient(#000 0 0) content-box;
+  margin-right: 10px;
+}
+
+.address-lines-container {
+  width: 100%;
+}
+
+.address-lines {
+  background-color: var(--font-color);
+  border: none;
+  height: 1px;
+  width: 120px;
+  margin: 20px 0;
+}
+
 .contact__form {
-	background-color: #E3C7AF;
-	/* background-color: #fff; */
+	background-color: var(--postcard-color);
   margin: 0 20px 20px;
 }
 
 .contact__field {
-	margin: 20px 0;
+	margin: 20px;
+}
+
+.contact__field--label {
+  color: var(--postcard-contrast-color);
+  padding: 10px;
+  margin-bottom: 5px;
 }
 
 .required-id {
@@ -57,27 +96,52 @@
 }
 
 .contact__input,
-.contact__submit {
-	/* border: 1px solid var(--contrast-color); */
-	/* border-radius: 10px; */
-  background-color: var(--secondary-color);
+.contact__submit,
+.contact__textarea {
   border: none;
-  border-bottom: 1px solid #AA9785;
-	padding: 10px;
-	width: 90%;
-  margin: 0 10px;
+  border-bottom: 1px solid var(--postcard-contrast-color);
+  background-color: var(--postcard-color);
   font-size: 1rem;
+	padding: 10px;
+	width: 100%;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.751);
+  font-weight: 200;
+  font-size: 0.75rem;
+}
+
+.contact__input:hover,
+.contact__textarea:hover {
+  background-color: var(--secondary-color);
+}
+
+.contact__textarea {
+  width: 100%;
+  height: 120px;
+}
+
+.contact__textarea--count {
+  color: rgba(0, 0, 0, 0.751);
+  font-size: .75rem;
+}
+
+.contact__actions {
+  padding: 20px 50px 70px;
 }
 
 .contact__submit {
-  background-color: #EFF5F6;
-  width: 100%;
+  border: 2px solid var(--postcard-contrast-color);
+  background-color: var(--postcard-color);
+  color: var(--postcard-contrast-color);
   font-size: 1.25rem;
-  color: var(--contrast-color);
+  width: 100%;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .contact__submit:hover {
-  background-color: #5F9EA0;
-  color: #EFF5F6;
-  cursor: pointer;
+  background-color: var(--postcard-contrast-color);
+  color: var(--postcard-color);
 }

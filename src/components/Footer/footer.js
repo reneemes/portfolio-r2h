@@ -1,4 +1,6 @@
 import "./footer.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
 
@@ -7,10 +9,10 @@ function Footer() {
       <p className="footer__text">Created by Renee Messersmith</p>
       <div className="footer__links">
         <a className="footer__links-icon" href="https://www.linkedin.com/in/reneemessersmith/">
-          <img className="footer__links-icon--img" src="/assets/linkedin.png" alt="LinkedIn Icon"/>
+          <FontAwesomeIcon icon={faLinkedinIn} size="lg" style={{color: "#033d5e",}} />
         </a>
         <a className="footer__links-icon" href="https://github.com/reneemes">
-          <img className="footer__links-icon--img" src="/assets/github.png" alt="GitHub Icon"/>
+          <FontAwesomeIcon icon={faGithubAlt} size="lg" style={{color: "#033d5e",}} />
         </a>
       </div>
     </footer>

@@ -1,6 +1,8 @@
 import "./contact.css";
+import { useState } from "react";
 
 function Contact() {
+  const [text, setText] = useState("");
 
   return (
     <section className="contact">
@@ -20,18 +22,25 @@ function Contact() {
         <div className="middle-line"></div>
 
         <div className="contact-btm-rt">
-          <p>
-            ~~~~~
-            ~~~~~
-            ~~~~~
-          </p>
+          <div className="stamp"></div>
+          {/* <p>
+            _________
+            _________
+            _________
+          </p> */}
+          <div className="address-lines-container">
+            <hr className="address-lines"></hr>
+            <hr className="address-lines"></hr>
+            <hr className="address-lines"></hr>
+            <hr className="address-lines"></hr>
+          </div>
         </div>
 
       </div>
       <form className="contact__form">
 
         <div className="contact__field">
-          <label for="name">Enter Your Name <span className="required-id">*</span></label>
+          <label className="contact__field--label" for="name">Enter Your Name <span className="required-id">*</span></label>
           <input
             className="contact__input"
             type="text"
@@ -43,7 +52,7 @@ function Contact() {
         </div>
 
         <div className="contact__field">
-          <label for="email">Enter Your Email <span className="required-id">*</span></label>
+          <label className="contact__field--label" for="email">Enter Your Email <span className="required-id">*</span></label>
           <input
             className="contact__input"
             type="email"
@@ -55,28 +64,30 @@ function Contact() {
         </div>
 
         <div className="contact__field">
-          <label for="phone">Enter Your Phone Number</label>
+          <label className="contact__field--label" for="phone">Enter Your Phone Number</label>
           <input
             className="contact__input"
             type="tel"
             name="phone"
             id="phone"
-            placeholder="(555)123-456"
+            placeholder="123-456-7890"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             required
           />
         </div>
 
         <div className="contact__field">
-          <label for="comments">Enter Your Message <span className="required-id">*</span></label>
+          <label className="contact__field--label" for="comments">Enter Your Message <span className="required-id">*</span></label>
           <textarea
             className="contact__textarea"
             name="comments"
             id="comments"
             placeholder="Enter message here..."
             maxLength="500"
+            onChange={(e) => setText(e.target.value)}
             required
           />
+          <span className="contact__textarea--count">{text.length} / 500</span>
         </div>
 
         <div className="contact__actions">
@@ -86,9 +97,8 @@ function Contact() {
             value="Submit"
           />
         </div>
-
       </form>
-      {/* </div> */}
+
     </section>
   )
 }

@@ -18,7 +18,7 @@
   font-size: 4rem;
   font-family: "Xanh Mono", monospace;
   text-decoration: none;
-  color: var(--header-initial-color);
+  /* color: var(--header-initial-color); */
 }
 
 .header__nav-bar--desktop {
