@@ -1,9 +1,9 @@
-.contact-page {
+.contact {
 	display: flex;
 	justify-content: center;
 }
 
-.contact-container {
+.contact__container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -15,38 +15,39 @@
   margin: 50px;
 }
 
-.contact-form {
+.contact__title {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.contact__form {
 	width: 100%;
 }
 
-.name,
-.email,
-.phone-number,
-.comments,
-.submit-button {
-	margin: 20px;
+.contact__field {
+	margin: 20px 0;
 }
 
 #name,
 #email,
-#phone-number,
+#phone,
 #comments,
-#submit-button {
-	border: 1px solid cadetblue;
-	border-radius: 20px;
-	padding: 18px;
-	width: 90%;
+.contact__submit {
+	border: 1px solid var(--contrast-color);
+	border-radius: 10px;
+	padding: 10px;
+	width: 100%;
   font-size: 1rem;
 }
 
-#submit-button {
+.contact__submit {
   background-color: #EFF5F6;
   width: 100%;
   font-size: 1.25rem;
-  color: cadetblue;
+  color: var(--contrast-color);
 }
 
-#submit-button:hover {
+.contact__submit:hover {
   background-color: #5F9EA0;
   color: #EFF5F6;
   cursor: pointer;
