@@ -26,4 +26,6 @@ code {
   --font-color: #031B2B;
   --postcard-color: #FBE9D2;
   --postcard-contrast-color: #6D421C;
+  
+  --fancy-font: "Xanh Mono", monospace;
 }

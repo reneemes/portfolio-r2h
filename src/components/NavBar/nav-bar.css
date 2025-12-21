@@ -16,7 +16,7 @@
 
 .header__initial--char {
   font-size: 4rem;
-  font-family: "Xanh Mono", monospace;
+  font-family: var(--fancy-font);
   text-decoration: none;
   /* color: var(--header-initial-color); */
 }

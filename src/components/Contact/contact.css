@@ -20,7 +20,7 @@
 }
 
 .contact__title {
-  font-family: "Xanh Mono", monospace;
+  font-family: var(--fancy-font);
   font-weight: 300;
   font-size: 1.7rem;
 }
