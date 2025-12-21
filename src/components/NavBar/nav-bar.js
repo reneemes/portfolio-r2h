@@ -31,9 +31,10 @@ function NavBar() {
           <div className={`header__nav-bar--mobile ${isOpen ? "open" : ""}`}>
             <FontAwesomeIcon icon={faXmark} size="2xl" id="close-btn" onClick={() => setIsOpen(false)}/>
             <a href="/">About</a>
-            <a href="/reflections">Reflections</a>
+            <a href="/portfolio">Portfolio</a>
             <a href="/contact">Contact</a>
             <a href="/resume">Resume</a>
+            <a href="/reflections">Reflections</a>
           </div>
         </div>
       </nav>
