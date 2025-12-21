@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 function TypingIntro() {
   return (
     <div className="typing-animation">
-      <h2 className="intro-main">I'M RENEE AND I'M A</h2>
+      <h2 className="typing-animation__main">I'M RENEE AND I'M A</h2>
       <TypeAnimation
         sequence={[
           "software engineer.",
@@ -19,7 +19,7 @@ function TypingIntro() {
         wrapper="div"
         speed={50}
         repeat={Infinity}
-        className="intro-secondary"
+        className="typing-animation__secondary"
       />
     </div>
   )

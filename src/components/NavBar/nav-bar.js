@@ -1,23 +1,40 @@
 import "./nav-bar.css";
-
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
-// import { byPrefixAndName } from '@awesome.me/free-brands-svg/icons'
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contact";
 
   return (
-    <div className="nav-wrapper">
-      <div className="color-mode-icons">
-        <FontAwesomeIcon icon={faMoon} className="moon-icon" size="xl" style={{ color: "#ffffff" }} />
-        <FontAwesomeIcon icon={faSun} className="sun-icon" size="xl" style={{ color: "#000000" }} />
+    <div className={`header ${isContactPage ? "contact-header" : ""}`}>
+      <div className="header__initial">
+        <a className="header__initial--char" href="/">R</a>
       </div>
-      <nav className="nav-bar">
-        <div className="nav-buttons">
+      <nav className="header__nav-bar">
+        {/* Desktop Nav */}
+        <div className="header__nav-bar--desktop">
           <a href="/">About</a>
           <a href="/reflections">Reflections</a>
           <a href="/contact">Contact</a>
           <a href="/resume">Resume</a>
+        </div>
+
+        {/* Hamburger Icon */}
+        <FontAwesomeIcon icon={faBars} size="2xl" style={{color: "var(--font-color)",}} id="hamburger-icon" onClick={() => setIsOpen(true)}/>
+        {/* Mobile Nav with Overlay*/}
+        <div className={`nav-overlay ${isOpen ? "open" : ""}`} onClick={() => setIsOpen(false)}>
+          <div className={`header__nav-bar--mobile ${isOpen ? "open" : ""}`}>
+            <FontAwesomeIcon icon={faXmark} size="2xl" id="close-btn" onClick={() => setIsOpen(false)}/>
+            <a href="/">About</a>
+            <a href="/reflections">Reflections</a>
+            <a href="/contact">Contact</a>
+            <a href="/resume">Resume</a>
+          </div>
         </div>
       </nav>
     </div>
