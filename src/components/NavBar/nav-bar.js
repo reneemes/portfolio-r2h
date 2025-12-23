@@ -9,9 +9,10 @@ function NavBar() {
 
   const location = useLocation();
   const isContactPage = location.pathname === "/contact";
+  const isProjectPage = location.pathname === "/portfolio";
 
   return (
-    <div className={`header ${isContactPage ? "contact-header" : ""}`}>
+    <div className={`header ${isContactPage ? "contact-header" : ""} ${isProjectPage ? "project-header" : ""}`}>
       <div className="header__initial">
         <a className="header__initial--char" href="/">R</a>
       </div>

@@ -1,0 +1,23 @@
+.reflection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  background-color: var(--primary-color);
+
+  &__article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  &_article-title {
+    font-size: 1.75rem;
+  }
+
+  &__article-body {
+    font-size: 1.25rem;
+  }
+}

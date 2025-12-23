@@ -1,0 +1,55 @@
+@use "../../styles/variables" as *;
+
+.projects {
+  @include center-items;
+  background-color: var(--secondary-color);
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 7rem;
+    // background-color: var(--contact-color);
+    // display: block;
+    // width: 90vw;
+    padding: 5%;
+  }
+}
+
+.project {
+  @include center-items;
+  // background-color: var(--secondary-color);
+  border-radius: 8px;
+  margin: 0 0 20px;
+
+  &__description {
+    font-size: 1.25rem;
+  }
+}
+
+.chip-title {
+  font-size: 1.25rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  margin: 4px;
+  border-radius: 16px;
+  font-size: 0.875rem;
+  background-color: var(--primary-color);
+  font-weight: 500;
+}
+
+
+// @media screen and (min-width: 700px) {
+//   .projects__grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 50px;
+//   }
+// }

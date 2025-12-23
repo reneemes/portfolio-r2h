@@ -1,21 +1,18 @@
 .footer {
   font-family: var(--fancy-font);
-	display: flex;
+  display: flex;
   flex-direction: column;
-	align-items: center;
+  align-items: center;
   padding: 30px;
   background-color: var(--secondary-color);
 }
-
 .footer__links-icon {
   margin: 10px;
 }
-
 .footer__links-icon--img {
   height: 30px;
-  transition: transform .5s;
+  transition: transform 0.5s;
 }
-
 .footer__links-icon--img:hover {
   transform: scale(1.5);
-}
+}/*# sourceMappingURL=footer.css.map */
