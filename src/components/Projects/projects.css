@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--project-color);
+  position: relative;
+  z-index: 1;
 }
 .projects__title {
   margin-top: 0;
+  font-family: var(--fancy-font);
 }
 .projects__grid {
   display: grid;
@@ -15,27 +18,61 @@
 }
 
 .project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
   border-radius: 8px;
   margin: 0 0 20px;
 }
+.project__img {
+  width: 100%;
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+.project__img img {
+  width: 100%;
+}
+.project__title {
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  justify-self: center;
+  align-self: end;
+  z-index: 3;
+  width: 80%;
+  background-color: var(--contrast-color);
+  font-family: var(--fancy-font);
+  text-decoration: none;
+  text-align: center;
+  transform: translateY(50%);
+}
+.project__title h2 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  padding: 1.25rem;
+  margin: 0;
+}
 .project__description {
   font-size: 1.25rem;
+  grid-column: 1/-1;
+  padding: 3%;
+  margin: 2.5rem 0 0;
 }
 
-.chip-title {
+.chips {
+  grid-column: 1/-1;
+  padding: 3%;
+}
+.chips__title {
   font-size: 1.25rem;
+  font-weight: 600;
 }
-
-.chip {
+.chips__info {
   display: inline-flex;
   align-items: center;
   padding: 4px 10px;
   margin: 4px;
   border-radius: 16px;
-  font-size: 0.875rem;
-  background-color: var(--primary-color);
+  font-size: 1rem;
+  background-color: var(--project-color);
   font-weight: 500;
 }/*# sourceMappingURL=projects.css.map */

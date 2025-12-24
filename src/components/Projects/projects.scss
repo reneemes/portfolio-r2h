@@ -2,10 +2,13 @@
 
 .projects {
   @include center-items;
-  background-color: var(--secondary-color);
+  background-color: var(--project-color);
+  position: relative;
+  z-index: 1;
 
   &__title {
     margin-top: 0;
+    font-family: var(--fancy-font);
   }
 
   &__grid {
@@ -20,29 +23,85 @@
 }
 
 .project {
-  @include center-items;
-  // background-color: var(--secondary-color);
+  // @include center-items;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  // background-color: var(--primary-color);
+  background-color: white;
   border-radius: 8px;
   margin: 0 0 20px;
 
+  // position: relative;
+  // row-gap: 2rem;
+
+  &__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
+    width: 80%;
+
+    background-color: var(--contrast-color);
+    font-family: var(--fancy-font);
+    text-decoration: none;
+    text-align: center;
+
+    transform: translateY(50%);
+    
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      padding: 1.25rem;
+      margin: 0;
+    }
+  }
+  
   &__description {
     font-size: 1.25rem;
+    grid-column: 1 / -1;
+    padding: 3%;
+    margin: 2.5rem 0 0;
   }
 }
 
-.chip-title {
-  font-size: 1.25rem;
-}
-
-.chip {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 10px;
-  margin: 4px;
-  border-radius: 16px;
-  font-size: 0.875rem;
-  background-color: var(--primary-color);
-  font-weight: 500;
+.chips {
+  grid-column: 1 / -1;
+  padding: 3%;
+  
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  &__info {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    margin: 4px;
+    border-radius: 16px;
+    font-size: 1rem;
+    // background-color: #fcf9f7;
+    // background-color: #f9f3ef;
+    // background-color: #fff0e8;
+    // background-color: #b3c4cf;
+    // background-color: #d2e1eb;
+    // background-color: var(--primary-color);
+    // background-color: var(--postcard-color);
+    // background-color: var(--secondary-color);
+    background-color: var(--project-color);
+    font-weight: 500;
+  }
 }
 
 
@@ -52,4 +111,135 @@
 //     grid-template-columns: repeat(2, 1fr);
 //     gap: 50px;
 //   }
+// }
+// $sprinkle: #e569a0;
+
+// @keyframes bounce-in-sprinkles {
+//   0% {
+//     opacity: 0;
+//     height: 0;
+//     width: 0;
+//   }
+//   20% {
+//     opacity: 1;
+//   }
+//   80% {
+//     height: 7.66667vh;
+//     width: 2.875vh;
+//   }
+//   100% {
+//     height: 6.66667vh;
+//     width: 2.5vh;
+//   }
+// }
+
+// .sprinkle-bg {
+//   position: fixed;         /* stays in background */
+//   inset: 0;                /* top:0 right:0 bottom:0 left:0 */
+//   pointer-events: none;    /* doesn’t block clicks */
+//   z-index: 0;
+//   overflow: hidden;
+// }
+
+// .sprinkle {
+//   position: absolute;
+//   border-radius: 100vh;
+//   z-index: 0;
+//   animation: bounce-in-sprinkles 0.5s forwards;
+//   box-shadow: 1.5vh 1.5vh 0 rgba(0, 0, 0, .25);
+// }
+
+// .one {
+//   transform: rotate(60deg);
+//   background-color: $sprinkle;
+//   top: 30%;
+//   left: 90%;
+//   animation-delay: 1s;
+// }
+
+// .two {
+//   transform: rotate(-60deg);
+//   background-color: $sprinkle;
+//   top: 70%;
+//   left: 67%;
+//   animation-delay: 1.5s;
+// }
+
+// .three {
+//   transform: rotate(10deg);
+//   background-color: $sprinkle;
+//   top: 20%;
+//   left: 44%;
+//   animation-delay: 1.25s;
+// }
+
+// .four {
+//   transform: rotate(-30deg);
+//   background-color: $sprinkle;
+//   top: 60%;
+//   left: 87%;
+//   animation-delay: 1s;
+// }
+
+// .five {
+//   transform: rotate(67deg);
+//   background-color: $sprinkle;
+//   top: 88%;
+//   left: 22%;
+//   animation-delay: 1.5s;
+// }
+
+// .six {
+//   transform: rotate(90deg);
+//   background-color: $sprinkle;
+//   top: 47%;
+//   left: 32%;
+//   animation-delay: 1.5s;
+// }
+
+// .seven {
+//   transform: rotate(-45deg);
+//   background-color: $sprinkle;
+//   top: 20%;
+//   left: 63%;
+//   animation-delay: 1.25s;
+// }
+
+// .eight {
+//   transform: rotate(20deg);
+//   background-color: $sprinkle;
+//   top: 80%;
+//   left: 50%;
+//   animation-delay: 1s;
+// }
+// .nine {
+//   transform: rotate(-120deg);
+//   background-color: $sprinkle;
+//   top: 80%;
+//   left: 490px;
+//   animation-delay: 1.5s;
+// }
+
+// .ten {
+//   transform: rotate(-10deg);
+//   background-color: $sprinkle;
+//   top: 12.5%;
+//   left: 450px;
+//   animation-delay: 1s;
+// }
+
+// .eleven {
+//   transform: rotate(50deg);
+//   background-color: $sprinkle;
+//   top: 30%;
+//   left: 70px;
+//   animation-delay: 1.25s;
+// }
+
+// .twelve {
+//   transform: rotate(-20deg);
+//   background-color: $sprinkle;
+//   top: 50%;
+//   left: 250px;
+//   animation-delay: 1s;
 // }

@@ -36,7 +36,7 @@
 }
 
 .project-header {
-  background-color: var(--secondary-color);
+  background-color: var(--project-color);
 }
 
 .nav-overlay.open {
