@@ -14,15 +14,6 @@ function Projects() {
 		"WebMock & VCR"
 	];
 
-	const rancidTom = [
-		"React",
-		"React Router",
-		"JavaScript",
-		"HTML",
-		"CSS",
-		"Cypress"
-	];
-
 	const trackerTech = [
 		"React",
 		"React Router",
