@@ -5,6 +5,7 @@
   background-color: var(--project-color);
   position: relative;
   z-index: 1;
+  padding-top: 30px;
 }
 .projects__title {
   margin-top: 0;
@@ -23,6 +24,10 @@
   background-color: white;
   border-radius: 8px;
   margin: 0 0 20px;
+  transition: transform 0.5s;
+}
+.project:hover {
+  transform: scale(1.03);
 }
 .project__img {
   width: 100%;
@@ -79,6 +84,7 @@
 
 @media screen and (min-width: 700px) {
   .projects__grid {
-    gap: 7rem;
+    gap: 10rem;
+    row-gap: 5rem;
   }
 }/*# sourceMappingURL=projects.css.map */

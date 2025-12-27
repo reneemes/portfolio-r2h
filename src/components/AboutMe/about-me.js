@@ -11,29 +11,31 @@ function AboutMe() {
         <TypingIntro/>
       </div>
 
-      {/* Slideshow */}
-      <figure className="about__slideshow">
-        <div className="about__slides">
-          <img src="/assets/headshot.jpg" alt="Photo of Renee" className="about__photo" id="photo1"/>
-          <img src="/assets/photo2.jpg" alt="Headshot" className="about__photo" id="photo2"/>
-          <img src="/assets/photo1.jpg" alt="Mountain" className="about__photo" id="photo3"/>
-        </div>
-      </figure>
+      <div className="lg-sizing">
+        {/* Slideshow */}
+        <figure className="about__slideshow">
+          <div className="about__slides">
+            <img src="/assets/headshot.jpg" alt="Photo of Renee" className="about__photo" id="photo1"/>
+            <img src="/assets/photo2.jpg" alt="Headshot" className="about__photo" id="photo2"/>
+            <img src="/assets/photo1.jpg" alt="Mountain" className="about__photo" id="photo3"/>
+          </div>
+        </figure>
 
-      {/* Bio */}
-      <section className="about__content">
-        <h2 className="about__title">ABOUT ME</h2>
-        <p className="about__bio">My career journey began with a passion for problem-solving, 
-          which has driven me to excel in diverse roles—whether I’m ensuring smooth 
-          operations as a flight attendant, piloting unmanned systems, or managing teams 
-          in high-pressure environments. With a background in unmanned vehicle system operations, 
-          I enjoy tackling complex technical challenges and ensuring precision in everything I do. 
-          As a communications specialist, I honed my ability to formulate clear and impactful messages, 
-          while my experience as a flight attendant has strengthened my leadership and crisis 
-          management skills. No matter the industry or task, I’m committed to delivering high-quality 
-          results, always looking for opportunities to grow and apply my versatile skill set to new challenges.
-        </p>
-      </section>
+        {/* Bio */}
+        <section className="about__content">
+          <h2 className="about__title">ABOUT ME</h2>
+          <p className="about__bio">My career journey began with a passion for problem-solving, 
+            which has driven me to excel in diverse roles—whether I’m ensuring smooth 
+            operations as a flight attendant, piloting unmanned systems, or managing teams 
+            in high-pressure environments. With a background in unmanned vehicle system operations, 
+            I enjoy tackling complex technical challenges and ensuring precision in everything I do. 
+            As a communications specialist, I honed my ability to formulate clear and impactful messages, 
+            while my experience as a flight attendant has strengthened my leadership and crisis 
+            management skills. No matter the industry or task, I’m committed to delivering high-quality 
+            results, always looking for opportunities to grow and apply my versatile skill set to new challenges.
+          </p>
+        </section>
+      </div>
 
       {/* Skills */}
        <section className='skills'>

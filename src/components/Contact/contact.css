@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: center;
   background-color: var(--contact-color);
+  min-height: 80vh;
 }
 .contact__greeting {
   display: grid;

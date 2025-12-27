@@ -5,6 +5,7 @@
   background-color: var(--project-color);
   position: relative;
   z-index: 1;
+  padding-top: 30px;
 
   &__title {
     margin-top: 0;
@@ -20,16 +21,16 @@
 }
 
 .project {
-  // @include center-items;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  // background-color: var(--primary-color);
   background-color: white;
   border-radius: 8px;
   margin: 0 0 20px;
+  transition: transform .5s;
 
-  // position: relative;
-  // row-gap: 2rem;
+  &:hover {
+    transform: scale(1.03);
+  }
 
   &__img {
     width: 100%;
@@ -96,6 +97,7 @@
 
 @media screen and (min-width: 700px) {
   .projects__grid {
-    gap: 7rem;
+    gap: 10rem;
+    row-gap: 5rem;
   }
 }

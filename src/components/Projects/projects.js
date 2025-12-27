@@ -62,7 +62,7 @@ function Projects() {
 
   return (
     <div className="projects">
-      <h1 className="projects__title">Projects</h1>
+      <h1 className="projects__title">Portfolio</h1>
       <div className="projects__grid">
 
         <div className="project">

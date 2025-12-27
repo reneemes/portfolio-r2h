@@ -1,6 +1,6 @@
 import "./nav-bar.css";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -18,12 +18,13 @@ function NavBar() {
       </div>
       <nav className="header__nav-bar">
         {/* Desktop Nav */}
-        <div className="header__nav-bar--desktop">
-          <a href="/">About</a>
-          <a href="/reflections">Reflections</a>
-          <a href="/contact">Contact</a>
-          <a href="/resume">Resume</a>
-        </div>
+        <ul className="header__nav-bar--desktop">
+          <li><Link to={"/"}>About</Link></li>
+          <li><Link to={"/portfolio"}>Portfolio</Link></li>
+          <li><Link to={"/contact"}>Contact</Link></li>
+          <li><Link to={"/resume"}>Resume</Link></li>
+          <li><Link to={"/reflections"}>Reflections</Link></li>
+        </ul>
 
         {/* Hamburger Icon */}
         <FontAwesomeIcon icon={faBars} size="2xl" style={{color: "var(--font-color)",}} id="hamburger-icon" onClick={() => setIsOpen(true)}/>
