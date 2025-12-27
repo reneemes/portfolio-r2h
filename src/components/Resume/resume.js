@@ -4,7 +4,7 @@ import "./resume.css";
 function Resume() {
   return (
     <section className="resume">
-      <h2 className="resume__title">Resume</h2>
+      <h1 className="resume__title">Resume</h1>
         <iframe
           className="resume__container"
           src={"/assets/resume.pdf"}

@@ -66,7 +66,7 @@ function Projects() {
       <div className="projects__grid">
 
         <div className="project">
-          <a className="project__img" href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><img src={"/assets/yoga-flow.png"} className="project__img" alt="thumbnail" width="100%"/></a>
+          <a className="project__img" href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><img src={"/assets/yoga-flow.png"} className="project__img" alt="yogaflow thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><h2>YogaFlow</h2></a>
 					<p className="project__description">YogaFlow is a web application where users can explore, create, and track personalized yoga routines. 
 						The app combines the benefits of a guided yoga practice with flexibility, offering curated routines for all levels.</p>
@@ -81,7 +81,7 @@ function Projects() {
         </div>
 
 				<div className="project">
-					<a className="project__img" href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><img src={"/assets/tracker.png"} className="project__img" alt="thumbnail" width="100%"/></a>
+					<a className="project__img" href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><img src={"/assets/tracker.png"} className="project__img" alt="tracker thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><h2>Tracker CRM</h2></a>
 					<p className="project__description">An application for tracking companies, managing contacts, and organizing job applications all in one place.</p>
 					<div className="chips">
@@ -95,7 +95,7 @@ function Projects() {
 				</div>
 
 				<div className="project">
-					<a className="project__img" href="https://down-the-rabbit-hole.netlify.app/" target="_blank" rel="noreferrer"><img src={"/assets/dtrh.png"} className="project__img" alt="thumbnail" /></a>
+					<a className="project__img" href="https://down-the-rabbit-hole.netlify.app/" target="_blank" rel="noreferrer"><img src={"/assets/dtrh.png"} className="project__img" alt="down the rabbit hole thumbnail" /></a>
 					<a className="project__title" href="https://down-the-rabbit-hole.netlify.app/" target="_blank" rel="noreferrer"><h2>Down the Rabbit Hole</h2></a>
 					<p className="project__description">Designed and developed a full stack educational web application intended to immerse users in the fascinating world of animals and their ecosystems.</p>
 					<div className="chips">
@@ -109,7 +109,7 @@ function Projects() {
 				</div>
 
 				<div className="project">
-					<a className="project__img" href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><img src={"/assets/affirmations.png"} className="project__img" alt="thumbnail" width="100%"/></a>
+					<a className="project__img" href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><img src={"/assets/affirmations.png"} className="project__img" alt="daily affirmations thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><h2>Daily Affirmations</h2></a>
 					<p className="project__description">Daily Affirmations is a minimalist React and Electron audio player that plays relaxing tracks and displays positive affirmations for mindfulness and motivation.</p>
 					<div className="chips">

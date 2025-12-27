@@ -11,10 +11,10 @@ function Footer() {
     <footer className={`footer ${isProjectPage ? "project-footer" : ""}`}>
       <p className="footer__text">Created by Renee Messersmith</p>
       <div className="footer__links">
-        <a className="footer__links-icon" href="https://www.linkedin.com/in/reneemessersmith/">
+        <a className="footer__links-icon" href="https://www.linkedin.com/in/reneemessersmith/" aria-label="LinkedIn profile">
           <FontAwesomeIcon icon={faLinkedinIn} size="2xl" style={{color: "#033d5e",}} />
         </a>
-        <a className="footer__links-icon" href="https://github.com/reneemes">
+        <a className="footer__links-icon" href="https://github.com/reneemes" aria-label="GitHub profile">
           <FontAwesomeIcon icon={faGithubAlt} size="2xl" style={{color: "#033d5e",}} />
         </a>
       </div>

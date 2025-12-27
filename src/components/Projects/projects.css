@@ -8,8 +8,9 @@
   padding-top: 30px;
 }
 .projects__title {
-  margin-top: 0;
   font-family: var(--fancy-font);
+  font-size: 2.5rem;
+  margin-top: 0;
 }
 .projects__grid {
   display: grid;
