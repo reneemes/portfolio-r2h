@@ -1,0 +1,138 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--contact-color);
+
+  &__greeting {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    background-color: var(--postcard-color);
+    height: 300px;
+    margin: 20px 20px 0;
+  }
+
+  &__title {
+    font-family: var(--fancy-font);
+    font-weight: 300;
+    font-size: 1.7rem;
+  }
+
+  &__message {
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    padding: 10px;
+    margin-left: 10px;
+  }
+
+  .contact-top {
+    grid-column: 1 / 4;
+    text-align: center;
+  }
+
+  &__form {
+    background-color: var(--postcard-color);
+    margin: 0 20px 20px;
+  }
+
+  &__field {
+    margin: 20px;
+
+    &--label {
+      color: var(--postcard-contrast-color);
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__input,
+  &__textarea,
+  &__submit {
+    border: none;
+    border-bottom: 1px solid var(--postcard-contrast-color);
+    background-color: var(--postcard-color);
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--secondary-color);
+    }
+  }
+
+  &__textarea {
+    height: 120px;
+
+    &--count {
+      color: rgba(0, 0, 0, 0.751);
+      font-size: 0.75rem;
+    }
+  }
+
+  &__actions {
+    padding: 20px 50px 70px;
+  }
+
+  &__submit {
+    border: 2px solid var(--postcard-contrast-color);
+    color: var(--postcard-contrast-color);
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: var(--postcard-contrast-color);
+      color: var(--postcard-color);
+    }
+  }
+}
+
+.middle-line {
+  grid-column: 2 / 3;
+  height: 70%;
+  width: 1px;
+  margin: 10px auto;
+  background-color: black;
+}
+
+.contact-btm-rt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.stamp {
+  --r: 5px;
+  height: 70px;
+  aspect-ratio: 1;
+  padding: var(--r);
+  background: #b3b39c;
+  mask:
+    radial-gradient(50% 50%, #0000 66%, #000 67%) round
+      var(--r) var(--r) / calc(2 * var(--r)) calc(2 * var(--r)),
+    conic-gradient(#000 0 0) content-box;
+  margin-right: 10px;
+}
+
+.address-lines-container {
+  width: 100%;
+}
+
+.address-lines {
+  background-color: var(--font-color);
+  border: none;
+  height: 1px;
+  width: 120px;
+  margin: 20px 0;
+}
+
+.required-id {
+  color: firebrick;
+}
+
+::placeholder {
+  color: rgba(0, 0, 0, 0.751);
+  font-weight: 200;
+  font-size: 0.75rem;
+}
