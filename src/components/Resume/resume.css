@@ -3,27 +3,22 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-color);
-  /* background-color: var(--contrast-color); */
-  height: 90vh;
+  min-height: 80vh;
 }
-
 .resume__title {
-  /* color: var(--primary-color); */
   font-family: var(--fancy-font);
   font-size: 2.5rem;
 }
-
-.resume__link {
-  cursor: pointer;
+.resume__container {
+  border: none;
+  width: 100%;
+  flex: 1;
+  margin: 0 0 4rem;
 }
 
-/* .resume__container { */
-  /* border: none; */
-  /* width: 80%; */
-  /* height: 80%; */
-  /* margin: 0 auto; */
-/* } */
-
-.react-pdf__Page__canvas {
-  width: 100px;
-}
+@media screen and (min-width: 700px) {
+  .resume__container {
+    width: 80%;
+    height: 900px;
+  }
+}/*# sourceMappingURL=resume.css.map */

@@ -1,0 +1,103 @@
+@use "../../styles/variables" as *;
+
+.projects {
+  @include center-items;
+  background-color: var(--project-color);
+  position: relative;
+  z-index: 1;
+  padding-top: 30px;
+
+  &__title {
+    margin-top: 0;
+    font-family: var(--fancy-font);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 4rem;
+    padding: 5%;
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: white;
+  border-radius: 8px;
+  margin: 0 0 20px;
+  transition: transform .5s;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &__img {
+    width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: end;
+    z-index: 3;
+    width: 80%;
+
+    background-color: var(--contrast-color);
+    font-family: var(--fancy-font);
+    text-decoration: none;
+    text-align: center;
+
+    transform: translateY(50%);
+    
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      padding: 1.25rem;
+      margin: 0;
+    }
+  }
+  
+  &__description {
+    font-size: 1.25rem;
+    grid-column: 1 / -1;
+    padding: 3%;
+    margin: 2.5rem 0 0;
+  }
+}
+
+.chips {
+  grid-column: 1 / -1;
+  padding: 3%;
+  
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  &__info {
+    display: inline-flex;
+    align-items: center;
+    padding: 4px 10px;
+    margin: 4px;
+    border-radius: 16px;
+    font-size: 1rem;
+    background-color: var(--project-color);
+    font-weight: 500;
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .projects__grid {
+    gap: 10rem;
+    row-gap: 5rem;
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  font-family: var(--fancy-font);
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+  padding: 30px;
+  background-color: var(--secondary-color);
+
+  &__text {
+    font-size: 1rem;
+  }
+  
+  &__links-icon {
+    margin: 10px;
+
+    svg {
+      transition: transform .5s;
+      
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+
+.project-footer {
+  background-color: var(--contact-color);
+}
+
+@media screen and (min-width: 1000px) {
+  .footer {
+    &__text {
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -3,7 +3,7 @@ import "./reflections.css";
 function Reflections() {
   
   return (
-    <section className="reflections">
+    <section className="reflection">
       <article className="reflection__article">
         <h2 className="reflection__article-title">Professional Development</h2>
         <p className="reflection__article-body">

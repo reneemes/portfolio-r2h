@@ -1,6 +1,6 @@
 import "./nav-bar.css";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,20 +9,22 @@ function NavBar() {
 
   const location = useLocation();
   const isContactPage = location.pathname === "/contact";
+  const isProjectPage = location.pathname === "/portfolio";
 
   return (
-    <div className={`header ${isContactPage ? "contact-header" : ""}`}>
+    <div className={`header ${isContactPage ? "contact-header" : ""} ${isProjectPage ? "project-header" : ""}`}>
       <div className="header__initial">
         <a className="header__initial--char" href="/">R</a>
       </div>
       <nav className="header__nav-bar">
         {/* Desktop Nav */}
-        <div className="header__nav-bar--desktop">
-          <a href="/">About</a>
-          <a href="/reflections">Reflections</a>
-          <a href="/contact">Contact</a>
-          <a href="/resume">Resume</a>
-        </div>
+        <ul className="header__nav-bar--desktop">
+          <li><Link to={"/"}>About</Link></li>
+          <li><Link to={"/portfolio"}>Portfolio</Link></li>
+          <li><Link to={"/contact"}>Contact</Link></li>
+          <li><Link to={"/resume"}>Resume</Link></li>
+          <li><Link to={"/reflections"}>Reflections</Link></li>
+        </ul>
 
         {/* Hamburger Icon */}
         <FontAwesomeIcon icon={faBars} size="2xl" style={{color: "var(--font-color)",}} id="hamburger-icon" onClick={() => setIsOpen(true)}/>
@@ -31,9 +33,10 @@ function NavBar() {
           <div className={`header__nav-bar--mobile ${isOpen ? "open" : ""}`}>
             <FontAwesomeIcon icon={faXmark} size="2xl" id="close-btn" onClick={() => setIsOpen(false)}/>
             <a href="/">About</a>
-            <a href="/reflections">Reflections</a>
+            <a href="/portfolio">Portfolio</a>
             <a href="/contact">Contact</a>
             <a href="/resume">Resume</a>
+            <a href="/reflections">Reflections</a>
           </div>
         </div>
       </nav>

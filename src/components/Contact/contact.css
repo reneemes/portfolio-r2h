@@ -1,35 +1,76 @@
 .contact {
-	display: flex;
+  display: flex;
   flex-direction: column;
-	justify-content: center;
+  justify-content: center;
   background-color: var(--contact-color);
+  min-height: 80vh;
 }
-
 .contact__greeting {
   display: grid;
   grid-template-columns: 1fr 0.2fr 1fr;
-  grid-template-rows: .25fr 1fr;
-	background-color: var(--postcard-color);
+  grid-template-rows: 0.25fr 1fr;
+  background-color: var(--postcard-color);
   height: 300px;
   margin: 20px 20px 0;
 }
-
-.contact-top {
-  grid-column: 1/4;
-  text-align: center;
-}
-
 .contact__title {
   font-family: var(--fancy-font);
   font-weight: 300;
   font-size: 1.7rem;
 }
-
 .contact__message {
-  font-size: .75rem;
+  font-size: 0.75rem;
   line-height: 1.5rem;
   padding: 10px;
   margin-left: 10px;
+}
+.contact .contact-top {
+  grid-column: 1/4;
+  text-align: center;
+}
+.contact__form {
+  background-color: var(--postcard-color);
+  margin: 0 20px 20px;
+}
+.contact__field {
+  margin: 20px;
+}
+.contact__field--label {
+  color: var(--postcard-contrast-color);
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.contact__input, .contact__textarea, .contact__submit {
+  border: none;
+  border-bottom: 1px solid var(--postcard-contrast-color);
+  background-color: var(--postcard-color);
+  font-size: 1rem;
+  padding: 10px;
+  width: 100%;
+}
+.contact__input:hover, .contact__textarea:hover, .contact__submit:hover {
+  background-color: var(--secondary-color);
+}
+.contact__textarea {
+  height: 120px;
+}
+.contact__textarea--count {
+  color: rgba(0, 0, 0, 0.751);
+  font-size: 0.75rem;
+}
+.contact__actions {
+  padding: 20px 50px 70px;
+}
+.contact__submit {
+  border: 2px solid var(--postcard-contrast-color);
+  color: var(--postcard-contrast-color);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact__submit:hover {
+  background-color: var(--postcard-contrast-color);
+  color: var(--postcard-color);
 }
 
 .middle-line {
@@ -43,24 +84,17 @@
 .contact-btm-rt {
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: flex-end;
-  /* width: 100%; */
 }
 
 .stamp {
-  /* HTML: <div class="stamp"></div> */
-  --r: 5px; /* control the radius */
-
-  /* height: 60px; */
+  --r: 5px;
   height: 70px;
   aspect-ratio: 1;
   padding: var(--r);
   background: #b3b39c;
-  mask: 
-    radial-gradient(50% 50%,#0000 66%,#000 67%) round 
-     var(--r) var(--r)/calc(2*var(--r)) calc(2*var(--r)), 
-    conic-gradient(#000 0 0) content-box;
+  -webkit-mask: radial-gradient(50% 50%, rgba(0, 0, 0, 0) 66%, #000 67%) round var(--r) var(--r)/calc(2 * var(--r)) calc(2 * var(--r)), conic-gradient(#000 0 0) content-box;
+          mask: radial-gradient(50% 50%, rgba(0, 0, 0, 0) 66%, #000 67%) round var(--r) var(--r)/calc(2 * var(--r)) calc(2 * var(--r)), conic-gradient(#000 0 0) content-box;
   margin-right: 10px;
 }
 
@@ -76,34 +110,14 @@
   margin: 20px 0;
 }
 
-.contact__form {
-	background-color: var(--postcard-color);
-  margin: 0 20px 20px;
-}
-
-.contact__field {
-	margin: 20px;
-}
-
-.contact__field--label {
-  color: var(--postcard-contrast-color);
-  padding: 10px;
-  margin-bottom: 5px;
-}
-
 .required-id {
   color: firebrick;
 }
 
-.contact__input,
-.contact__submit,
-.contact__textarea {
-  border: none;
-  border-bottom: 1px solid var(--postcard-contrast-color);
-  background-color: var(--postcard-color);
-  font-size: 1rem;
-	padding: 10px;
-	width: 100%;
+::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.751);
+  font-weight: 200;
+  font-size: 0.75rem;
 }
 
 ::placeholder {
@@ -112,36 +126,15 @@
   font-size: 0.75rem;
 }
 
-.contact__input:hover,
-.contact__textarea:hover {
-  background-color: var(--secondary-color);
-}
-
-.contact__textarea {
-  width: 100%;
-  height: 120px;
-}
-
-.contact__textarea--count {
-  color: rgba(0, 0, 0, 0.751);
-  font-size: .75rem;
-}
-
-.contact__actions {
-  padding: 20px 50px 70px;
-}
-
-.contact__submit {
-  border: 2px solid var(--postcard-contrast-color);
-  background-color: var(--postcard-color);
-  color: var(--postcard-contrast-color);
-  font-size: 1.25rem;
-  width: 100%;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contact__submit:hover {
-  background-color: var(--postcard-contrast-color);
-  color: var(--postcard-color);
-}
+@media screen and (min-width: 650px) {
+  .contact__greeting, .contact__form {
+    max-width: 650px;
+  }
+  .contact__greeting {
+    margin: 20px auto 0;
+  }
+  .contact__form {
+    margin: 0 auto 20px;
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.css.map */

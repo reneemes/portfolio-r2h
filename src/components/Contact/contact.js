@@ -23,11 +23,7 @@ function Contact() {
 
         <div className="contact-btm-rt">
           <div className="stamp"></div>
-          {/* <p>
-            _________
-            _________
-            _________
-          </p> */}
+          
           <div className="address-lines-container">
             <hr className="address-lines"></hr>
             <hr className="address-lines"></hr>
