@@ -3,7 +3,7 @@
 This is my personal portfolio website showcasing my projects, skills, and experience as a developer. It serves as a central place to view my work, learn more about me, and get in touch.
 
 ## 🌐 Live Site
-### [Renee's Portfolio](#) is hosted using Vercel
+### [portfolio-reneemes.vercel.app](https://portfolio-reneemes.vercel.app/)
 
 ## ✨ Features
 
@@ -41,6 +41,6 @@ This is my personal portfolio website showcasing my projects, skills, and experi
 
 ## Author
   **Renee Messersmith**
-* [Portfolio](#)
+* [Portfolio](https://portfolio-reneemes.vercel.app/)
 * [LinkedIn](https://www.linkedin.com/in/reneemessersmith/)
 * [GitHub](https://github.com/reneemes)
