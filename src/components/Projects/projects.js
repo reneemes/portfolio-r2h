@@ -1,5 +1,4 @@
 import "./projects.css";
-// import dtrh from "/assets/down-the-rabbit-hole.png"
 
 function Projects() {
   const downTheRabbitHole = [
@@ -67,14 +66,14 @@ function Projects() {
       <div className="projects__grid">
 
         <div className="project">
-          {/* <a href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><img src={YogaFlow} className="zoom" alt="thumbnail" width="100%"/></a> */}
+          <a className="project__img" href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><img src={"/assets/yoga-flow.png"} className="project__img" alt="thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://yogaflow-app.netlify.app/" target="_blank" rel="noreferrer"><h2>YogaFlow</h2></a>
 					<p className="project__description">YogaFlow is a web application where users can explore, create, and track personalized yoga routines. 
 						The app combines the benefits of a guided yoga practice with flexibility, offering curated routines for all levels.</p>
-					<div className="flex-chips">
-						<span className="chip-title">Tech:</span>
+					<div className="chips">
+						<span className="chips__title">Tech:</span>
 						{yogaFlowTech.map((label, index) => (
-							<span key={index} className="chip">
+							<span key={index} className="chips__info">
 								{label}
 							</span>
 						))}
@@ -82,13 +81,13 @@ function Projects() {
         </div>
 
 				<div className="project">
-					{/* <a href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><img src={tracker} className="zoom" alt="thumbnail" width="100%"/></a> */}
+					<a className="project__img" href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><img src={"/assets/tracker.png"} className="project__img" alt="thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://tracker-crm-fe-38f7cf1aaca5.herokuapp.com/" target="_blank" rel="noreferrer"><h2>Tracker CRM</h2></a>
 					<p className="project__description">An application for tracking companies, managing contacts, and organizing job applications all in one place.</p>
-					<div className="flex-chips">
-						<span className="chip-title">Tech:</span>
+					<div className="chips">
+						<span className="chips__title">Tech:</span>
 						{trackerTech.map((label, index) => (
-							<span key={index} className="chip">
+							<span key={index} className="chips__info">
 								{label}
 							</span>
 						))}
@@ -110,36 +109,18 @@ function Projects() {
 				</div>
 
 				<div className="project">
-					{/* <a href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><img src={affirmations} className="zoom" alt="thumbnail" width="100%"/></a> */}
+					<a className="project__img" href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><img src={"/assets/affirmations.png"} className="project__img" alt="thumbnail" width="100%"/></a>
 					<a className="project__title" href="https://github.com/reneemes/affirmations" target="_blank" rel="noreferrer"><h2>Daily Affirmations</h2></a>
 					<p className="project__description">Daily Affirmations is a minimalist React and Electron audio player that plays relaxing tracks and displays positive affirmations for mindfulness and motivation.</p>
-					<div className="flex-chips">
-						<span className="chip-title">Tech:</span>
+					<div className="chips">
+						<span className="chips__title">Tech:</span>
 						{affirmationsTech.map((label, index) => (
-							<span key={index} className="chip">
+							<span key={index} className="chips__info">
 								{label}
 							</span>
 						))}
 					</div>
 				</div>
-
-
-				{/* SPRINKLES */}
-				{/* <div className="sprinkle-bg">
-					<div className="sprinkle one"></div>
-					<div className="sprinkle two"></div>
-					<div className="sprinkle three"></div>
-					<div className="sprinkle four"></div>
-					<div className="sprinkle five"></div>
-					<div className="sprinkle six"></div>
-					<div className="sprinkle seven"></div>
-					<div className="sprinkle eight"></div>
-					<div className="sprinkle nine"></div>
-					<div className="sprinkle ten"></div>
-					<div className="sprinkle eleven"></div>
-					<div className="sprinkle twelve"></div>
-				</div> */}
-
       </div>
     </div>
   )

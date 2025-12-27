@@ -14,10 +14,7 @@
   &__grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 7rem;
-    // background-color: var(--contact-color);
-    // display: block;
-    // width: 90vw;
+    gap: 4rem;
     padding: 5%;
   }
 }
@@ -91,155 +88,14 @@
     margin: 4px;
     border-radius: 16px;
     font-size: 1rem;
-    // background-color: #fcf9f7;
-    // background-color: #f9f3ef;
-    // background-color: #fff0e8;
-    // background-color: #b3c4cf;
-    // background-color: #d2e1eb;
-    // background-color: var(--primary-color);
-    // background-color: var(--postcard-color);
-    // background-color: var(--secondary-color);
     background-color: var(--project-color);
     font-weight: 500;
   }
 }
 
 
-// @media screen and (min-width: 700px) {
-//   .projects__grid {
-//     display: grid;
-//     grid-template-columns: repeat(2, 1fr);
-//     gap: 50px;
-//   }
-// }
-// $sprinkle: #e569a0;
-
-// @keyframes bounce-in-sprinkles {
-//   0% {
-//     opacity: 0;
-//     height: 0;
-//     width: 0;
-//   }
-//   20% {
-//     opacity: 1;
-//   }
-//   80% {
-//     height: 7.66667vh;
-//     width: 2.875vh;
-//   }
-//   100% {
-//     height: 6.66667vh;
-//     width: 2.5vh;
-//   }
-// }
-
-// .sprinkle-bg {
-//   position: fixed;         /* stays in background */
-//   inset: 0;                /* top:0 right:0 bottom:0 left:0 */
-//   pointer-events: none;    /* doesn’t block clicks */
-//   z-index: 0;
-//   overflow: hidden;
-// }
-
-// .sprinkle {
-//   position: absolute;
-//   border-radius: 100vh;
-//   z-index: 0;
-//   animation: bounce-in-sprinkles 0.5s forwards;
-//   box-shadow: 1.5vh 1.5vh 0 rgba(0, 0, 0, .25);
-// }
-
-// .one {
-//   transform: rotate(60deg);
-//   background-color: $sprinkle;
-//   top: 30%;
-//   left: 90%;
-//   animation-delay: 1s;
-// }
-
-// .two {
-//   transform: rotate(-60deg);
-//   background-color: $sprinkle;
-//   top: 70%;
-//   left: 67%;
-//   animation-delay: 1.5s;
-// }
-
-// .three {
-//   transform: rotate(10deg);
-//   background-color: $sprinkle;
-//   top: 20%;
-//   left: 44%;
-//   animation-delay: 1.25s;
-// }
-
-// .four {
-//   transform: rotate(-30deg);
-//   background-color: $sprinkle;
-//   top: 60%;
-//   left: 87%;
-//   animation-delay: 1s;
-// }
-
-// .five {
-//   transform: rotate(67deg);
-//   background-color: $sprinkle;
-//   top: 88%;
-//   left: 22%;
-//   animation-delay: 1.5s;
-// }
-
-// .six {
-//   transform: rotate(90deg);
-//   background-color: $sprinkle;
-//   top: 47%;
-//   left: 32%;
-//   animation-delay: 1.5s;
-// }
-
-// .seven {
-//   transform: rotate(-45deg);
-//   background-color: $sprinkle;
-//   top: 20%;
-//   left: 63%;
-//   animation-delay: 1.25s;
-// }
-
-// .eight {
-//   transform: rotate(20deg);
-//   background-color: $sprinkle;
-//   top: 80%;
-//   left: 50%;
-//   animation-delay: 1s;
-// }
-// .nine {
-//   transform: rotate(-120deg);
-//   background-color: $sprinkle;
-//   top: 80%;
-//   left: 490px;
-//   animation-delay: 1.5s;
-// }
-
-// .ten {
-//   transform: rotate(-10deg);
-//   background-color: $sprinkle;
-//   top: 12.5%;
-//   left: 450px;
-//   animation-delay: 1s;
-// }
-
-// .eleven {
-//   transform: rotate(50deg);
-//   background-color: $sprinkle;
-//   top: 30%;
-//   left: 70px;
-//   animation-delay: 1.25s;
-// }
-
-// .twelve {
-//   transform: rotate(-20deg);
-//   background-color: $sprinkle;
-//   top: 50%;
-//   left: 250px;
-//   animation-delay: 1s;
-// }
+@media screen and (min-width: 700px) {
+  .projects__grid {
+    gap: 7rem;
+  }
+}

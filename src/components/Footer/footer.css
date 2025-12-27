@@ -15,4 +15,8 @@
 }
 .footer__links-icon--img:hover {
   transform: scale(1.5);
+}
+
+.project-footer {
+  background-color: var(--contact-color);
 }/*# sourceMappingURL=footer.css.map */

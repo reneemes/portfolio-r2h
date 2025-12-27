@@ -13,7 +13,7 @@
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 7rem;
+  gap: 4rem;
   padding: 5%;
 }
 
@@ -75,4 +75,10 @@
   font-size: 1rem;
   background-color: var(--project-color);
   font-weight: 500;
+}
+
+@media screen and (min-width: 700px) {
+  .projects__grid {
+    gap: 7rem;
+  }
 }/*# sourceMappingURL=projects.css.map */
