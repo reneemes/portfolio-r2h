@@ -65,4 +65,10 @@
 
 #close-btn {
   margin: 20px 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .header__initial--char {
+    font-size: 6rem;
+  }
 }/*# sourceMappingURL=nav-bar.css.map */

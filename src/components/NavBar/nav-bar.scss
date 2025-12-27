@@ -74,3 +74,11 @@
 #close-btn {
   margin: 20px 0;
 }
+
+@media screen and (min-width: 1000px) {
+  .header {
+    &__initial--char {
+      font-size: 6rem;
+    }
+  }
+}

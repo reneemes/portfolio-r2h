@@ -1,27 +1,16 @@
 import "./resume.css";
-import { Document, Page } from 'react-pdf';
-import { pdfjs } from 'react-pdf';
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
 
 
 function Resume() {
   return (
     <section className="resume">
       <h2 className="resume__title">Resume</h2>
-      <a href="/assets/resume.pdf" target="_blank" className="resume__link">
-        <Document 
-          file="/assets/resume.pdf"
-          onLoadError={console.error}
-        >
-          <Page pageNumber={1} width={350}/>
-        </Document>
-      </a>
+        <iframe
+          className="resume__container"
+          src={"/assets/resume.pdf"}
+          // src={"/assets/resume.pdf#toolbar=0&navpanes=0&scrollbar=0"}
+          title="PDF Viewer"
+        />
     </section>
   )
 }
