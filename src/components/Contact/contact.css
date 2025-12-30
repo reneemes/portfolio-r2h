@@ -20,6 +20,7 @@
 }
 .contact__message {
   font-size: 0.75rem;
+  font-weight: 300;
   line-height: 1.5rem;
   padding: 10px;
   margin-left: 10px;
@@ -132,6 +133,9 @@
   }
   .contact__greeting {
     margin: 20px auto 0;
+  }
+  .contact__message {
+    font-size: 1rem;
   }
   .contact__form {
     margin: 0 auto 20px;

@@ -47,11 +47,16 @@
   background-color: var(--project-color);
 }
 
+.nav-overlay {
+  pointer-events: none;
+}
+
 .nav-overlay.open {
   position: fixed;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
+  pointer-events: auto;
 }
 
 .header__initial--char,
@@ -90,33 +95,37 @@
       margin: 0 20px 0;
       padding: 0;
       list-style-type: none;
+
+      list-style: none;
       
       li {
-        border-radius: 3px;
-        padding: 1.25em;
+        // padding: 1.25em;
         cursor: pointer;
       }
       
-      li:hover {
-        background-color: var(--primary-hover-color);
-      }
-
       li a {
+        display: block;
+        border-radius: 3px;
         text-decoration: none;
         font-size: 1rem;
         font-weight: 600;
+        padding: 1.25em;
+      }
+      
+      li a:hover {
+        background-color: var(--primary-hover-color);
       }
     }
   }
 
   .contact-header {
-    .header__nav-bar--desktop li:hover {
+    .header__nav-bar--desktop li a:hover {
       background-color: var(--contact-hover-color);
     }
   }
 
   .project-header {
-    .header__nav-bar--desktop li:hover {
+    .header__nav-bar--desktop li a:hover {
       background-color: var(--project-hover-color);
     }
   }
